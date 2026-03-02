@@ -1,10 +1,10 @@
-# Study-apir-2026
+# Study APIR
 
-API de estdo de Spring Boot
+API de estudo de Spring Boot.
 
 ## Instruções de uso
 
 
-...
+```
 mvn spring-boot:run
-...
+```
