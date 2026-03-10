@@ -10,6 +10,6 @@ public class PingController {
 
     @GetMapping("ping")
     public String ping() {
-        return "pong feio gabriel beta xuxona"; // Resposta padrão
+        return "pong"; // Resposta padrão
     }
 }
