@@ -45,7 +45,8 @@ public class ProdutosController {
     }
 
     @DeleteMapping
-    public ResponseEntity<String> delete() {
+    public ResponseEntity<String> delete(Long id) {
+        repository.deleteById(id);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).body("Produto excluído!");
     }
 

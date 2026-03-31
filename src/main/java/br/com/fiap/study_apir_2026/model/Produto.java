@@ -1,12 +1,13 @@
 package br.com.fiap.study_apir_2026.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import java.math.BigDecimal;
 
-@Getter
-@Setter
+import lombok.Data;
+
+@Data
 public class Produto {
-    private Long id;
-    private String nome;
+    private final Long id;
+    private final String nome;
+    private final BigDecimal valor;
 
 }
