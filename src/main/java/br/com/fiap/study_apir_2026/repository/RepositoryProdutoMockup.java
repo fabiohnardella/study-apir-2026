@@ -2,6 +2,7 @@ package br.com.fiap.study_apir_2026.repository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import br.com.fiap.study_apir_2026.model.Produto;
 
@@ -25,12 +26,8 @@ public class RepositoryProdutoMockup {
         return produtos;
     }
 
-    public Produto findById(Long id) {
-        for (Produto produto : produtos) {
-            if (produto.getId().equals(id)) {
-                return produto;
-            }
-        }
+    public Optional<Produto> findById(Long id) {
+        produtos.stream().filter(p -> p.getId().equals(id)).findFirst();
         return null;
     }
 
